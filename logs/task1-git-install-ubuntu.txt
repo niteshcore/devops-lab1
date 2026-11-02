@@ -1,0 +1,36 @@
+Unable to find image 'ubuntu:22.04' locally
+22.04: Pulling from library/ubuntu
+771eed73ee82: Pulling fs layer
+771eed73ee82: Verifying Checksum
+771eed73ee82: Download complete
+771eed73ee82: Pull complete
+Digest: sha256:076e7bf82319619f28dd0aa9c02ab34b055ad37100395b4f49a2ffba04fb5e11
+Status: Downloaded newer image for ubuntu:22.04
+root@ubuntu:~# apt update
+Reading package lists... Done
+root@ubuntu:~# apt install git -y
+git installed successfully
+root@ubuntu:~# git --version
+git version 2.34.1
+root@ubuntu:~# which git
+/usr/bin/git
+root@ubuntu:~# git config --global user.name "Nitesh2005-cell"
+root@ubuntu:~# git config --global user.email "niteshs11a@gmail.com"
+root@ubuntu:~# git config --global init.defaultBranch main
+root@ubuntu:~# git config --global core.editor nano
+root@ubuntu:~# git config --global --list
+user.name=Nitesh2005-cell
+user.email=niteshs11a@gmail.com
+init.defaultbranch=main
+core.editor=nano
+root@ubuntu:~# cat ~/.gitconfig
+[user]
+	name = Nitesh2005-cell
+	email = niteshs11a@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = nano
+root@ubuntu:~# cat /etc/os-release | head -2
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
