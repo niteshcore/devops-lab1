@@ -1,0 +1,41 @@
+nitesh@macbook Dev-ops Lab % git init -b main
+Initialized empty Git repository in /Users/niteshsharma/Dev-ops Lab/.git/
+nitesh@macbook Dev-ops Lab % git status --short
+?? README.md
+?? logs/
+nitesh@macbook Dev-ops Lab % git add README.md logs/task1-git-install-ubuntu.txt
+nitesh@macbook Dev-ops Lab % git commit -m "Initial commit: README and Task 1 Git install log"
+[main (root-commit) 9fc605a] Initial commit: README and Task 1 Git install log
+ 2 files changed, 47 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 logs/task1-git-install-ubuntu.txt
+nitesh@macbook Dev-ops Lab % git add app.py
+nitesh@macbook Dev-ops Lab % git commit -m "Add app.py"
+[main d9c22cb] Add app.py
+ 1 file changed, 1 insertion(+)
+ create mode 100644 app.py
+nitesh@macbook Dev-ops Lab % git branch feature-login
+nitesh@macbook Dev-ops Lab % git checkout feature-login
+Switched to branch 'feature-login'
+nitesh@macbook Dev-ops Lab % git add login.py
+nitesh@macbook Dev-ops Lab % git commit -m "Add login feature"
+[feature-login 8ac0b59] Add login feature
+ 1 file changed, 2 insertions(+)
+ create mode 100644 login.py
+nitesh@macbook Dev-ops Lab % git branch
+* feature-login
+  main
+nitesh@macbook Dev-ops Lab % git checkout main
+Switched to branch 'main'
+nitesh@macbook Dev-ops Lab % git merge feature-login --no-ff -m "Merge branch feature-login into main"
+Merge made by the 'ort' strategy.
+ login.py | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 login.py
+nitesh@macbook Dev-ops Lab % git log --oneline --graph --all
+*   517f4be Merge branch feature-login into main
+|\  
+| * 8ac0b59 Add login feature
+|/  
+* d9c22cb Add app.py
+* 9fc605a Initial commit: README and Task 1 Git install log
