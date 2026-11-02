@@ -1,0 +1,10 @@
+nitesh@macbook Dev-ops Lab % git remote add origin https://github.com/niteshcore/devops-lab1.git
+nitesh@macbook Dev-ops Lab % git remote -v
+origin	https://github.com/niteshcore/devops-lab1.git (fetch)
+origin	https://github.com/niteshcore/devops-lab1.git (push)
+nitesh@macbook Dev-ops Lab % git push -u origin main feature-login
+To https://github.com/niteshcore/devops-lab1.git
+ * [new branch]      main -> main
+ * [new branch]      feature-login -> feature-login
+branch 'main' set up to track 'origin/main'.
+branch 'feature-login' set up to track 'origin/feature-login'.
